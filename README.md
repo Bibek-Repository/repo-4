@@ -16,5 +16,28 @@ len method is used to find the length of the set
 A set can be used to store different values of different data types: string, int and boolean for example can all be in the same set
 sets are defined as objects with the data type 'set'
 set constructor can be used to construct a set. Two round brackets are used and set keyword is used
+We cannot change the set items, but items/values can be added
+Two sets can be added together using update() method
+Value can be added to a set using add() method
+remove operation can be done using remove() or discard() method
+pop() method randomly removes a value from the set and returns the removed value
+clear() method clears the set
+The union() and update() methods joins all items from both sets.
+The intersection() method keeps ONLY the duplicates.
+The difference() method keeps the items from the first set that are not in the other set(s).
+The symmetric_difference() method keeps all items EXCEPT the duplicates.
+del keyword is used for completely deleting the set
+update() method doesn't return a value but rather joins two sets
+Both union() and update() will exclude any duplicate items.
+
+The intersection_update() method will also keep ONLY the duplicates, but it will change the original set instead of returning a new set.
+the difference_update() method will not return the value but update the set to the difference of two sets
+symmetric_difference_update() method will remove the intersection values, updates the set with the other values from both sets.
+
+&= is intersection_update
+isdisjoint() method checks if the two sets have intersection or not
+issubset() method checks if one set contains other set
+issuperset() returns whether this set contains another set or not
+
 
 
