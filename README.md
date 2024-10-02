@@ -39,5 +39,30 @@ isdisjoint() method checks if the two sets have intersection or not
 issubset() method checks if one set contains other set
 issuperset() returns whether this set contains another set or not
 
+Dictionary
+
+Dictionary are used to store data values in key(pairs)
+They are ordered, changeable and do not allow duplicates
+If the key values are repeated then the following key value will override the previous key value
+len() method is used to display the total number of key pair
+The values in dictionary can have any data types including lists, tuples as shown in the code file: dictionaries.py
+The data type of dictionary in python is class "dict"
+The dict() constructor can be used to create dictionary
+Accessing items can be done via key names or get method
+keys() method displays all the keys in the dictionary
+values() method will display all the values in the dictionary
+items() method will display all the key value pair in the dictionary
+if statement can be used to check if a key is present in the dictionary
+update({"key":"value"}) can be used to update a dictionary
+pop() and popitems() method are used to remove the key value pair
+adding a new pair can be done as shown in the code
+del key word can be used to delete a key value pair or the dictionary itself
+clear() method is used to completely clear the dictionary
+copy() method and dict() method can be called to copy a dictionary to another new
+
+
+
+
+
 
 
