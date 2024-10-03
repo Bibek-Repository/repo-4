@@ -68,8 +68,43 @@ if...elif...else statement can be used for multiple conditions
 if elif and else falls in the same line while the methods and functions comes with indentation
 
 
+Python while loop
+
+Else can be used right after while condition is completed or not met
+break statement will move the execution out of loop
+continue statement will skip the code and continue to the loop
+
+Python For loop
+
+for loops are generally used with python arrays: lists, tuples, sets, dictionaries
+for loop can also be used to loop through a string
+break statement is used to break out of the loop statement, else statement is not executed
+continue statement immediately skips the code after it but then continue back to the loop
+range() method has single parameter, double parameter or triple parameter:
+        single parameter: it defines 0 to the end(excluded)
+        double parameter: it defines start and the end(excluded)
+        triple parameter: it defines start, end and the gap
+pass keyword can be used to perform no activity in a loop
 
 
+Functions in python
+
+Functions are called
+Upon the calling, they return some value
+They take parameters as the input which they later work on
+Arguments are the parameters. Any number of Arguments can be passed to the Function
+While defining the function, we take parameters inside the parenthesis while we pass arguments from the calling function
+if we don't know the number of arguments to pass to a function, then we can use tuples or dictionaries, that can take any number of values. In dictionaries **kwargs are used while *parameter is used for tuple.
+In dictionary we use both key and value as arguments while in tuples we only use values as shown in code
+Default parameter values can be added in the parameter of the function defining. This parameter value is used when no argument are passed as demonstrated in code
+We can also pass a list or dictionary as an argument and access the values or keys respectively
+Value can be returned in python using return keyword
+Upon calling the function, it returns the value
+If there is no content for the function, then pass keyword can be used to prevent error.
+In python there are two parameters broadly: one is the positional argument and the other is keyword argument
+when defining a parameter, if we use ,/ then keyword arguments are not allowed. keyword arguments are can be placed without order but positional arguments are to be placed in order.
+Any argument before the / , are positional-only, and any argument after the *, are keyword-only.
+In the code section, we have used the tri_recursion function. The function calls itself with the parameter reduced by 1, and returns the value. At first the else statement is executed which returns 0 to the result and the result value is used to return the value of the last recursion which also displays the result by print method.
 
 
 
