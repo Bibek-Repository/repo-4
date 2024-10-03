@@ -108,4 +108,17 @@ In the code section, we have used the tri_recursion function. The function calls
 
 
 
+lambda functions in python
 
+lambda functions are small anonymous functions in python
+lambda arguments : expression #syntax of lambda function
+arguments are passed via a variable as shown in code section
+
+classes or objects in python
+
+Python is an object oriented Programming language
+object of the class can be created and the property of the class can be accessed using the object
+the __init__() function is the built in function that takes the parameter self and other user defined parameters
+this function is always executed when the class is initiated. like in code section, the p1 object is defined which initiates the class 
+the __str__() function is used to provide return values
+The self parameter can have any name but should be always at the start and it refers to the properties of the element
