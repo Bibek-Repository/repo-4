@@ -60,6 +60,14 @@ del key word can be used to delete a key value pair or the dictionary itself
 clear() method is used to completely clear the dictionary
 copy() method and dict() method can be called to copy a dictionary to another new
 
+python IF else statement
+
+if else statement can be used to check the condition of a statement as shown in code
+if else statement involves indentation
+if...elif...else statement can be used for multiple conditions
+if elif and else falls in the same line while the methods and functions comes with indentation
+
+
 
 
 
