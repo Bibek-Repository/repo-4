@@ -122,3 +122,21 @@ the __init__() function is the built in function that takes the parameter self a
 this function is always executed when the class is initiated. like in code section, the p1 object is defined which initiates the class 
 the __str__() function is used to provide return values
 The self parameter can have any name but should be always at the start and it refers to the properties of the element
+modifying any value of the property in class can be done as shown in code
+delete any property can be done via del keyword
+we can also delete whole object of the class using del keyword
+pass keyword can be used in empty classes to prevent any error
+
+Python Inheritance
+
+Inheritance allows us to define a class that inherits all the methods and properties of another class
+parent class is the class where the child class inherits from
+parent class is also known as base class
+child class is also known as derived class
+In the code, class Student is the derived class and class Person is the base class
+I accessed the Person class method called func_1() using the object of the Student class
+the student class has the parameter of the class Person to denote parent child relationship between the two
+During the inheritance,the child class can also have __init__() method to initialize the child class just like in class child in the code section. This will override the __init__() class in the Parent class. To prevent this from happening, the __init__() method from the parent class is called in the __init__() function of the child class with the same parameters.
+the super() method will allow the child class to call __init__() function from the parent class automatically
+we can add properties and method to the child class as shown in the code section
+
