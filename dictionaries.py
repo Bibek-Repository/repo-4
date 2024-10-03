@@ -171,7 +171,7 @@ print(myfamily["child3"]["age"])
 #looping through the nested dictionaries
 
 for x, obj in myfamily.items():    #here myfamily is a three key-value pair dictionary. items() returns the corresponding key and value to x and obj
-    print(x)
+    print(x)                       #remember to use this when a dictionary is within another dictionary like in dict8 and myfamily dictionary
 
     # for y,z in obj.items():
     #     print(y + ':', z)
@@ -180,3 +180,4 @@ for x, obj in myfamily.items():    #here myfamily is a three key-value pair dict
         print(y + ':', obj[y])
 
 print(myfamily.items())
+
