@@ -140,3 +140,7 @@ During the inheritance,the child class can also have __init__() method to initia
 the super() method will allow the child class to call __init__() function from the parent class automatically
 we can add properties and method to the child class as shown in the code section
 
+iterators in python
+
+
+
