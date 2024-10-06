@@ -142,5 +142,13 @@ we can add properties and method to the child class as shown in the code section
 
 iterators in python
 
+Iterators are the objects in python that will iterate over values of the iterables in python. Iterables could be any list, dictionary, tuple and sets
+As shown in code, iterables can be used to iterate the values in class using loop. __iter__() and __next__() methods can be used. In the code section, first we define a object of a class. The object is used to call the __iter__() method and the __next__() method is used to increment the value which is printed using print() method.
 
+polymorphism in python
+
+It refers to the methods/functions/operators that can operate on many objects or classes.
+Function polymorphism: the function can be used for many objects. Such as len() function can be used for strings, tuples, dictionary, tuples etc
+class polymorphism: different class with same method name can be called. For example in the code section, move() method is called by the objects of each class
+Class Polymorphism: In class polymorphism, the methods of same name are in parent class as well as child class. In the code section, the method move() is available in both parent class: vehicle and child class: motorcycle and car. When we call the move() method from the object of the motorcycle class, the move() method is called from the class motorcycle. But when the move() method is called using the object of the car class which has pass statement, move() method from the parent class Vehicle is invoked.
 
