@@ -157,5 +157,35 @@ scope in python
 There are two scope of variable in python. The global scope of a variable denotes that the variable retains its value inside and outside of any method. The local scope of a variable denotes that the variable retains its value only inside the method. If a variable is declared global inside a method as illustrated in code file: Scope.py, the variable retains the value outside the scope of the local method
 The keyword: nonlocal can be used to make the variable retain its value outside the method within another method as shown in code file: scope.py
 
+Modules in Python:
 
+It refers to the library of code in python. It contains functions which can be used.
+In the file, python_modules.py, movie() method is defined. movie() is called in another file: import.py
+In import.py, import python_modules.py has been used to import the module.
+as keyword can be used to rename a module which can be easier to code
+some of the build in modules are cmath, math, etc. 
+A complex number can be represented in two forms: polar form and rectangular form. They can be interchanged using polar() method and rect() method in the cmath module.
+to convert the value from radian to degree, degree() method can be used. This method is in math module of the python
+The variable as a type of complex if the value stored is complex
+The polar Variable are stored as tuple containing the magnitude and phase
+Power and Logarithmic Functions: cmath.exp(), for returning the the exponential raised to certain power
+cmath.log(x,base): returns the log of x to the base
+cmath.log(x): returns the log of x to the natural base e
+cmath.log10(x): returns the base 10 log of the variable x
+cmath.sqrt(x): It returns the square root of the variable x 
+cmath module will return a complex number
+Trigonometric Functions: cmath.asin(x): returns the arc of sin that is inverse of sine of a variable x
+cmath.sin(x): returns the sine of a variable x
+similarly, cosine and tangent function as similar syntax
+Classification Function: isfinite() returns a true or false if the value in infinite in both real and imaginary part
+isinf() returns true or false if the value in real and imaginary part is infinite
+isclose() method returns the closeness of two variables within some tolerance which can be defined as shown in code
+isnan() returns true if the value is not a number else false
+cmath.pi It returns the value of Pi                       
+cmath.e  It returns the value of exponential
+cmath.tau It returns the value of tau contant                 
+math.inf  It returns the infinite value which is float('inf')                
+cmath.infj It return the infinite imaginary value in complex form        
+cmath.nan It returns the not a number value                     
+cmath.nanj  It returns the not a number value in complex imaginary form.
 
