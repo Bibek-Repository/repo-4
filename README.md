@@ -152,3 +152,10 @@ Function polymorphism: the function can be used for many objects. Such as len() 
 class polymorphism: different class with same method name can be called. For example in the code section, move() method is called by the objects of each class
 Class Polymorphism: In class polymorphism, the methods of same name are in parent class as well as child class. In the code section, the method move() is available in both parent class: vehicle and child class: motorcycle and car. When we call the move() method from the object of the motorcycle class, the move() method is called from the class motorcycle. But when the move() method is called using the object of the car class which has pass statement, move() method from the parent class Vehicle is invoked.
 
+scope in python
+
+There are two scope of variable in python. The global scope of a variable denotes that the variable retains its value inside and outside of any method. The local scope of a variable denotes that the variable retains its value only inside the method. If a variable is declared global inside a method as illustrated in code file: Scope.py, the variable retains the value outside the scope of the local method
+The keyword: nonlocal can be used to make the variable retain its value outside the method within another method as shown in code file: scope.py
+
+
+
