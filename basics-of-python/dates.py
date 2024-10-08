@@ -42,7 +42,7 @@ print(x.strftime("%p"))     # Output:AM
 print(x.strftime("%M"))     # Output:52
 print(x.strftime("%S"))     # Output:28
 print(x.strftime("%f"))     # Output:798763
-print(x.strftime("%z"))     # Output:
+print(x.strftime("%z"))     # Output: prints offset
 print(x.strftime("%j"))     # Output:282
 print(x.strftime("%U"))     # Output:40
 print(x.strftime("%W"))     # Output:41
@@ -55,6 +55,5 @@ print(x.strftime("%G"))     # Output: 2024
 print(x.strftime("%u"))     # Output: 2
 print(x.strftime("%V"))      # Output: 41
 
-print()
-print(x.strftime("%z"))     
+  
 

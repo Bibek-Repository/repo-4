@@ -189,3 +189,13 @@ cmath.infj It return the infinite imaginary value in complex form
 cmath.nan It returns the not a number value                     
 cmath.nanj  It returns the not a number value in complex imaginary form.
 
+Dates and Time in Python
+
+datetime module can be imported.
+now() method calls the date and time of the system right now
+.year .month .hour etc can be used to extract specific date time formats
+datetime() constructor can be called to construct a new date time. arguments are sperated by the comma
+strftime() method can be called for the format of the date and time as shown in code file: dates.py
+
+
+
