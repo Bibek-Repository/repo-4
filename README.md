@@ -197,5 +197,18 @@ now() method calls the date and time of the system right now
 datetime() constructor can be called to construct a new date time. arguments are sperated by the comma
 strftime() method can be called for the format of the date and time as shown in code file: dates.py
 
+Maths in Python
 
+There are some built in functions in python that helps us perform the mathematical operations:
+These include: 
+max(): returns the maximum value in the tuple
+min(): returns the minimum value
+abs(): returns the absolute value(the value with no sign)
+pow(): returns the value raised to certain power
+Also, there is a module called math module in python. The module can be imported to call different functions in python related to maths.
+import math
+sqrt(): This function returns the square root of a value
+ceil(): This function returns the upper integer value
+floor(): This function returns the lower integer value
+pi(): This function returns the value of pi 
 
