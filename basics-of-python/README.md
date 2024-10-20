@@ -212,3 +212,7 @@ ceil(): This function returns the upper integer value
 floor(): This function returns the lower integer value
 pi(): This function returns the value of pi 
 
+Python JSON
+
+JSON is a syntax for storing and exchanging data
+JSON is a text written with Javascript Object Notation
