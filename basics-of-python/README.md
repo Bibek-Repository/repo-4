@@ -306,3 +306,16 @@ The Match object has properties and methods used to retrieve information about t
 .group() returns the part of the string where there was a match.
 
 If there is no match, the value None will be returned, instead of the Match Object.
+
+Python PIP
+
+PIP
+It is a package manager for Python packages, or modules.
+A package contains all the files needed for a module.
+Modules are python code libraries that can be included in a project.
+To check if PIP is installed: pip --version
+ https://pypi.org/project/pip/ link to download the PIP
+To download a package : pip install <package_name>. In the code section, we have used camelcase package
+more packages : https://pypi.org/
+To remove a package : pip uninstall <package_name>
+To list all the packages that are installed : pip list
