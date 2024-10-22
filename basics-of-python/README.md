@@ -328,3 +328,10 @@ if the try block raises an error, the except block will be executed. There can b
 
 Python User Input
 input() method can be used to take input from the user. The string inside the input parameter is prompted in the display as shown in code file.
+
+Python String Formatting
+
+F-Strings
+It allows to format the string to be printed. f is placed at the beginning of the string literal to format it. {}: are the placeholders. They contain: variables, operations, functions, and modifiers to format the value. A placeholder can have a modifier to format the value. colon ':' is added to include the modifier. In the code file. .2f and , are used. .2f will add two decimal places while , will add comma in every 3 digits. Value can be directly added in the placeholder without the variable. Mathematical operations: values or variables, can be done within the placeholder as shown in code file. if...else statements can be included inside the placeholders. Functions can also be executed inside the placeholder. In the code file upper() function is used. User defined functions can be used in the placeholder.
+string format() are not used in python 3. But for practise, I have included it in the code file.
+
