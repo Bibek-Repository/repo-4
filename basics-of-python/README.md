@@ -319,3 +319,9 @@ To download a package : pip install <package_name>. In the code section, we have
 more packages : https://pypi.org/
 To remove a package : pip uninstall <package_name>
 To list all the packages that are installed : pip list
+
+Try and Except in Python
+
+The try block will test a block of code for errors. If there is error except block is executed. But if there are no errors and try block is executed then else block is executed as shown in code section. The finally block will be executed regardless of the try except block.
+Exception Handling
+if the try block raises an error, the except block will be executed. There can be multiple exceptions as shown in code file. If the try block is executed, then, the exception is not raised and hence, else block will be executed. The finally block will be executed regardless of error or no error. To raise an exception raise keyword can be used. In the code section, if statement is filled with exception that is being raised. TypeError can be raised using the raise keyword.
