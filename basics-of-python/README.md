@@ -216,3 +216,93 @@ Python JSON
 
 JSON is a syntax for storing and exchanging data
 JSON is a text written with Javascript Object Notation
+
+Python RegEx
+
+A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern. RegEx can be used to check if a string contains the specified search pattern.
+
+RegEx Module
+Python has a built-in package called re, which can be used to work with Regular Expressions.
+
+RegEx in Python
+When you have imported the re module, you can start using regular expressions:
+
+RegEx Functions
+The re module offers a set of functions that allows us to search a string for a match:
+
+findall: Returns a list containing all matches
+search: Returns a Match object if there is a match anywhere in the string
+split: Returns a list where the string has been split at each match
+sub: Replaces one or may matches with a string
+
+Metacharacters 
+They are characters with special meaning:
+[] A set of characters. Example: "[a-m]"
+\ signals a special sequence (can also be used to escape special characters). Example: "\d"
+. Any character (except newline character) "he..o"
+^ Starts with Example: "^hello"
+$ Ends with Example: "planet$"
+* Zero or more occurences Example:"he.*o"
++ One or more occurences Example:"he.+o"
+? Zero or one occurences Example: "he.?o"
+{} Exactly the specified number of occurences Example:"he.{2}o"
+| Either or Example: "falls|stays"
+() Capture and group
+
+Special Sequences
+A special sequence is a \ followed by one of the characters in the list below, and has a special meaning:
+
+\A : Returns a match if the specified characters are at the beginning of the string Example: "\AThe"
+\b : Returns a match where the specified characters are at the beginning or at the end of a word (the "r" in the beginning is making sure that the string is being treated as a "raw string") Example: r"\bain" r"ain\b"
+\B : Returns a match where the specified characters are present, but NOT at the beginning (or at the end ) of a word (the "r" in the beginning is making sure that the string is being treated as a "raw string") r"\Bain" r"ain\B"
+\d : Returns a match where the string contains digits (numbers from 0-9) "\d"
+\D : Returns a match where the string DOES NOT contain digits Example : "\D"
+\s : Returns a match where the string contains a white space character Example: "\s"
+\S : Returns a match where the string DOES NOT contain a white space Example : "\S"
+\w " Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9), and the underscore_character) Example: "\w"
+\W : Returns a match where the string DOES NOT contain any word characters Example: "\W"
+\Z : Returns a  match if the specified characters are at the end of the string Example : "Spain\Z"
+
+Sets
+
+A set is a set of characters inside a pair of square brackets [] with a special meaning:
+
+[arn] Returns a match where one of the specified characters (a,r, or n) is present
+[a-n] Returns a match for any lower case character, alphabetically between a and n
+[^arn] Returns a match for any character EXCEPT a,r, and n
+[0123] Returns a match where any of the specified digits(0,1,2, or 3) are present
+[0-9] Returns a match for any digit between 0 and 9
+[0-5][0-9] Returns a match for any two-digit numbers from 00 and 59
+[a-zA-Z] returns a match for any character alphabetically bewteen a and z, lower case OR upper case
+[+] In sets, +, *, ., |, (), $, {} has no special meaning, so [+] means: return a match for any + character in the string
+
+The findall() Function
+The findall() function returns a list containing all matches.
+
+The list contains the matches in the order they are found.
+If no matches are found, an empty list is returned.
+
+The search() Function
+The search() function searches the string for a match, and returns a Match object if there is a match.
+If there is more than one match, only the first occurrence of the match will be returned.
+
+The split() Function
+The split() function returns a list where the string has been split at each match.
+
+We can control the number of occurrences by specifying the maxsplit parameter.
+
+The sub() Function
+The sub() function replaces the matches with the text of our choice.
+
+We can control the number of replacements by specifying the count parameter.
+
+Match Object
+A Match Object is an object containing information about the search and the result.
+If there is no match, the value None will be returned, instead of the Match Object.
+
+The Match object has properties and methods used to retrieve information about the search, and the result:
+.span() returns a tuple containing the start-, and end positions of the match.
+.string returns the string passed into the function
+.group() returns the part of the string where there was a match.
+
+If there is no match, the value None will be returned, instead of the Match Object.
