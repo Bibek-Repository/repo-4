@@ -74,3 +74,11 @@ Converting Data Type on Existing Arrays
 The best way to change the data type of an existing array, is to make a copy of the array with the astype() method.
 The astype() function creates a copy of the array, and allows us to specify the data type as a parameter.
 The data type can be specified using a string, like 'f' for float, 'i' for integer etc. or we can use the data type directly like float for float and int for integer.
+
+The Difference Between Copy and View 
+The main difference between a copy and a view of an array is that the copy is a new array, and the view is just a view of the original array.
+Any changes made to the copy will not affect the original array, and any changes made to the original array will not affect the copy array. Any changes made to the view will affect the original array and vice-versa.
+
+To check if array owns its Data or not
+python has an attribute called base. The base attribute can be used identify if an array owns the Data or not. The copy does not own the data, so it returns none while the view owns the data, that is why it returns the original array.
+
