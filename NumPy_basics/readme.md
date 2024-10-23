@@ -56,3 +56,21 @@ If we don't pass end it will end at the length of array
 If we don't pass step, it will consider 1 as step.
 
 The number after the colon in a slice is excluded. The negative index starts at the end with index -1 and second last -2 and so on. If the number before : in a slice is left empty it will start from 0 and after the colon : if it is left empty then it will end at the last. Steps can be used to skip elements. Double :: will list all the elements. Steps can be added after the double colon, :: to skip elements. 2-D arrays can be sliced by similar way using comma to separate the arrays as shown in code file. 
+
+Data types in NumPy
+i: integer
+b: boolean
+u: unsigned integer
+f: float
+c: complex float
+m: timedelta
+M: datetime
+O: object
+S: string
+U: unicode string
+V: fixed chunk of memory for other type (void)
+
+Converting Data Type on Existing Arrays
+The best way to change the data type of an existing array, is to make a copy of the array with the astype() method.
+The astype() function creates a copy of the array, and allows us to specify the data type as a parameter.
+The data type can be specified using a string, like 'f' for float, 'i' for integer etc. or we can use the data type directly like float for float and int for integer.
