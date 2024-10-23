@@ -31,4 +31,9 @@ Creating a new file in Python
 "a": It will create a file. If the file exists, then it will append at the end.
 "w": It will create a file. If the file exits, then it will overwrite the content.
 
-
+Deleting a file in python
+To delete a file in python, OS module is imported.
+os.remove() function will remove the file
+path to the file can be given to delete files from other location.
+os.path.exists() method is used to check if the file exists before deleting it.
+os.rmdir() method is used to delete a folder. Empty folders can only be removed.
