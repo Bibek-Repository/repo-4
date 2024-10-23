@@ -87,3 +87,10 @@ The shape of an array is the number of elements in each dimension. There is an a
 
 Reshaping an array:
 Reshaping means to change the shape of an array. We can add or remove dimensions or change number of elements in each dimension.
+
+NumPy Array Iteration
+for loop is used for iteration. nditer() can be used for iteration
+
+Iterating Array with Different Data Types:
+op_dtypes argument can be used to change the datatype of elements while iterating. Numpy does not change the datatype of the element(where the element is in array) so it needs buffer and to enable it, we pass flags.
+As shown in code file, we can define the step size and iterate through all the elements. ndenumerate() function will help to find the index to each element.
