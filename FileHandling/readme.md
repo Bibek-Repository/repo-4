@@ -22,3 +22,13 @@ for loop can be used to print all the lines in the file.
 close() method is used to close the file.
 closing the file is important because sometimes due to buffering, changes made to a file may not show until we close the file.
 
+Write a file in Python
+"a" is append mode. It will append to the end of the file
+"w" is write mode. It will overwrite the content of the file. If the file does not exist, the file will be newly created.
+
+Creating a new file in Python
+"x": It will create a file. If the file exists, then it will return an error
+"a": It will create a file. If the file exists, then it will append at the end.
+"w": It will create a file. If the file exits, then it will overwrite the content.
+
+
