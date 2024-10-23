@@ -82,3 +82,5 @@ Any changes made to the copy will not affect the original array, and any changes
 To check if array owns its Data or not
 python has an attribute called base. The base attribute can be used identify if an array owns the Data or not. The copy does not own the data, so it returns none while the view owns the data, that is why it returns the original array.
 
+Shape of an Array:
+The shape of an array is the number of elements in each dimension. There is an attribute called shape that returns a tuple with each index having the number of corresponding elements. In the code file, (2,3) is shown which is a tuple which means that there are 2 dimensions each consisting of 3 elements. Integers at every index tells about the number of elements the corresponding dimension has. In the example above at index-4, so we can say that 5th(4+1th) dimension has 4 elements.
