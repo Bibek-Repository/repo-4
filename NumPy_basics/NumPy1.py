@@ -70,3 +70,36 @@ print(arr[1,1,2])
 arr = np.array([[[1,2,3],[4,5,6]],[[1,2,5],[8,3,0]]])
 print(arr[1,0,-1])  # The output should be 5
 print(arr[-1,-1,0])  # The output should be 8
+
+# Array Slicing
+arr = np.array([1,2,3,4,5,6])
+print(arr[3:5])  # The 5th index in excluded
+
+arr = np.array([1,2,3,4,5,6,7])
+print(arr[3:]) # This will print from the 3rd index to the end
+print(arr[:4]) # This will print from the 0 index to 4-1=3 index
+
+# Negative Slicing
+arr = np.array([1,2,3,4,5,6,7,8,9])
+print(arr[-3:-1])  # In slicing the last one is excluded
+print(arr[-3:])  # here the -3 index is printed up to the end
+
+# Step
+arr = np.array([1,2,3,4,5,6,7,8,9])
+print(arr[1:6:2])   # start:end(excluded):end
+
+# Slicing all the elements with a step
+arr = np.array([1,2,3,4,5,6,7,8,9])
+print(arr[::2])
+print(arr[::3])
+
+# Slicing 2-D Arrays
+arr = np.array([[1,2,3,4],[5,6,7,8]])
+print(arr[1,1:3])   # The last index 3 is excluded
+
+arr = np.array([[1,2,3,4,5,6],[5,6,7,8,9,10]])
+print(arr[0:2,2])  # Here the first slice takes both the elements of the 2-D array, while the second slice will take the elements from index 2 from both.
+
+# slicing both index in 2-D Arrays
+arr = np.array([[1,2,3,4,5,6],[6,7,8,9,1,2]])
+print(arr[0:2,2:5:2])   # Here, It will slice from both side with the step of 2

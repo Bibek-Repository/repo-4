@@ -47,3 +47,12 @@ NumPy Array Indexing
 Access Array Elements
 Array Elements can be accessed by index number. The index in NumPy array stars with 0 and so on.
 multi dimensional arrays can be indexed using numbers separated by commas as shown in code file. Negative index will see the elements from backward.
+
+NumPy Array Slicing
+Slicing in python means taking elements from one given index to another given index. 
+[start:step:end]
+If we don't pass start it will start at 0
+If we don't pass end it will end at the length of array
+If we don't pass step, it will consider 1 as step.
+
+The number after the colon in a slice is excluded. The negative index starts at the end with index -1 and second last -2 and so on. If the number before : in a slice is left empty it will start from 0 and after the colon : if it is left empty then it will end at the last. Steps can be used to skip elements. Double :: will list all the elements. Steps can be added after the double colon, :: to skip elements. 2-D arrays can be sliced by similar way using comma to separate the arrays as shown in code file. 
