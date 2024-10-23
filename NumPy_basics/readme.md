@@ -84,3 +84,6 @@ python has an attribute called base. The base attribute can be used identify if 
 
 Shape of an Array:
 The shape of an array is the number of elements in each dimension. There is an attribute called shape that returns a tuple with each index having the number of corresponding elements. In the code file, (2,3) is shown which is a tuple which means that there are 2 dimensions each consisting of 3 elements. Integers at every index tells about the number of elements the corresponding dimension has. In the example above at index-4, so we can say that 5th(4+1th) dimension has 4 elements.
+
+Reshaping an array:
+Reshaping means to change the shape of an array. We can add or remove dimensions or change number of elements in each dimension.
