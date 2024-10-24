@@ -94,3 +94,6 @@ for loop is used for iteration. nditer() can be used for iteration
 Iterating Array with Different Data Types:
 op_dtypes argument can be used to change the datatype of elements while iterating. Numpy does not change the datatype of the element(where the element is in array) so it needs buffer and to enable it, we pass flags.
 As shown in code file, we can define the step size and iterate through all the elements. ndenumerate() function will help to find the index to each element.
+
+NumPy Joining Array
+Joining means to combining two arrays together. concatenate() function along with the axis can be used to join the arrays. If axis is not defined, it explicitly takes 0. stack() method along with the axis can be used to join two arrays as shown in code file. hstack() method will join along rows while vstack() method will join along columns. dstack() method will join along height which is depth.
