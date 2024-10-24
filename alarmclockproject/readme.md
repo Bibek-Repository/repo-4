@@ -1,0 +1,5 @@
+datetime is used to get the current date and time. playsound is a module that allows playing audio files. 
+The script prompts the user to enter a time in the format HH:MM:SS AM/PM.
+
+Extracting Hour, Minute, Second, and Period from the Input:
+The script extracts the hour, minute, and second components from the user's input using string slicing. alarm_period extracts the "AM" or "PM" part from the input and converts it to uppercase with .upper(). The script continuously checks the current time using a while True loop. now = datetime.now() gets the current date and time. The script then extracts the current hour (%I for 12-hour format), minute (%M), second (%S), and period (%p which gives "AM" or "PM"). The script checks if the current period (AM/PM) matches the alarm period. It further checks if the current hour, minute, and seconds match the alarm hour, minute, and seconds. If all conditions match, it prints "Wake Up!" and  plays the alarm sound using the playsound function. The break statement ends the infinite loop once the alarm time is reached.
