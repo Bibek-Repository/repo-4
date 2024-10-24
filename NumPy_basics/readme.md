@@ -105,3 +105,6 @@ NumPy Searching Arrays
 We can search an array for a certain value, and return the indexes that get a match.
 To search an array, we shall use the where() method. 
 The searchsorted() method is assumed to be used on sorted arrays. This method starts the search from the left and returns the first index where the number is no longer larger than the next value. Searching from the right side can be achieved by using parameter side = 'right' which will return the right most index. Here, the method starts the search from the right and returns the first index where the number is no longer less than the next value. To search for more than one value, an array with the specified value can be provided as a parameter as shown in code file. The return value is an array which would show where the values would be inserted in the original array to maintain the order.
+
+NumPy Sorting Arrays
+Sorting means putting elements in an ordered sequence. Ordered Sequence is any sequence that has an order corresponding to elements, like numeric or alphabetical, ascending or descending. The NumPy ndarray object has a function called sort(), that will sort a specified array. This method returns a copy of the array, leaving the original array unchanged. You can also sort arrays of strings, or any other data type.
