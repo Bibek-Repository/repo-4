@@ -97,3 +97,7 @@ As shown in code file, we can define the step size and iterate through all the e
 
 NumPy Joining Array
 Joining means to combining two arrays together. concatenate() function along with the axis can be used to join the arrays. If axis is not defined, it explicitly takes 0. stack() method along with the axis can be used to join two arrays as shown in code file. hstack() method will join along rows while vstack() method will join along columns. dstack() method will join along height which is depth.
+
+NumPy Splitting Array
+Splitting is reverse to Joining. array_split() method is used for splitting arrays. It returns a values which is a list containing arrays. split() method will not adjust the elements but the array_split() method will adjust the elements to produce required array lists. splitted array can be accessed using index number as shown in code file. The array_split() method takes 2 or three parameters depending on the split character. If axis is to be mentioned, then the axis parameter can be passed. axis =1 is for row. An alternate solution in hsplit() which is opposite of hstack(). vsplit() and dsplit() are similar alternates to vstack() and dstack().
+
