@@ -108,3 +108,8 @@ The searchsorted() method is assumed to be used on sorted arrays. This method st
 
 NumPy Sorting Arrays
 Sorting means putting elements in an ordered sequence. Ordered Sequence is any sequence that has an order corresponding to elements, like numeric or alphabetical, ascending or descending. The NumPy ndarray object has a function called sort(), that will sort a specified array. This method returns a copy of the array, leaving the original array unchanged. You can also sort arrays of strings, or any other data type.
+
+NumPy Filter Array
+Getting only the selected elements out of an array and creating a new array out of them is the filtering. A filter array with boolean value is required for this as shown in code. The filter array can also be directly used with original array to find its boolean elements as shown in code file.
+
+
