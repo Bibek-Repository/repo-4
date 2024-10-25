@@ -31,3 +31,29 @@ n: number of possible outcomes (example: 6 for dice roll)
 pvals: list of probabilities of outcomes(example: 1/6,1/6,1/6,1/6,1/6,1/6 for dice roll)
 size: the shape of the array it returns
 They will produce one value for each pval. As they are generalization of binomial distribution their visual representation and similarity of normal distribution is same as that of multiple binomial distributions.
+
+Exponential Distribution
+It is used for describing time till next event. Example: failure/success etc. It has two parameters:
+scale: inverse of rate(defalut to 1.0)
+size: The shape of the array it returns
+Poisson Distribution deals with number of occurences of an event in a time period whereas exponential distribution deals with the time between these events.
+
+Chi Square Distribution
+It is used as a basis to verify the hypothesis. It has two parameters: 
+df: degree of freedom
+size: the shape of the array it returns
+
+Rayleigh Distribution
+It is used in signal processing. It has two parameters:
+scale: standard deviation. It decides how flat the distribution will be default 1.0
+At unit standard deviation, and 2 degree of freedom rayleigh and chi square represent the same distributions.
+
+Pareto Distribution
+pareto's law: 80-20 distribution (20% factors cause 80% outcome). It has two parameter:
+a : shape parameter
+size: the shape of the returned array
+
+Zipf Distribution
+They are used to sample data based on zipf's law. In a collection, the nth common term is 1/n times of the most common term. Example the 5th most common word in English occurs nearly 1/5 times as often as the most common word. It has two parameter:
+a : distribution parameter
+size : the shape of the returned array
