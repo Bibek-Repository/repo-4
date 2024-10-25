@@ -15,3 +15,6 @@ It is a Discrete Distribution. It describes the outcome of binary scenarios, e.g
 Discrete Distribution: The distribution is defined at separate set of events, eg. a coin toss's result in discrete as it can be only head or tails whereas height of people is continous as it can be 170, 170.1, 170.11 and so on.
 
 The Normal Distribution and the Binomial Distribution are the same if the data points are large in number
+
+Poisson Distribution
+Poisson Distribution is a Discrete Distribution. It estimates how many times an event can happen in a specified  time. If for example, Bibek eats twice a day what is the probability that I will eat thrice? It has two parameters: lam: rate or known number of occurrence e.g. bibek eats twice. size: the shape of the array which is returned. Poisson distribution is discrete whereas normal distribution is continuous. For large data points both the poisson and normal distribution are similar.
