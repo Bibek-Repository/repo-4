@@ -14,7 +14,7 @@ plt.show()
 
 # Demonstrating that Normal and poisson distribution are similar for large data points:
 
-sbn.distplot(random.normal(loc=50, scale=7,size=1000,),hist=False,label='normal distribution')
-sbn.distplot(random.poisson(lam=50, size=1000, ),hist=False,label='poisson distribution')
+sbn.distplot(random.normal(loc=50, scale=7,size=1000,),hist=False,label='Bibek normal distribution')
+sbn.distplot(random.poisson(lam=50, size=1000, ),hist=False,label='Bibek poisson distribution')
 plt.legend()
 plt.show()

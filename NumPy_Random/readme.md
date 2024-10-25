@@ -18,3 +18,6 @@ The Normal Distribution and the Binomial Distribution are the same if the data p
 
 Poisson Distribution
 Poisson Distribution is a Discrete Distribution. It estimates how many times an event can happen in a specified  time. If for example, Bibek eats twice a day what is the probability that I will eat thrice? It has two parameters: lam: rate or known number of occurrence e.g. bibek eats twice. size: the shape of the array which is returned. Poisson distribution is discrete whereas normal distribution is continuous. For large data points both the poisson and normal distribution are similar.
+
+Uniform Distribution
+It is used to describe probability where every event has equal chances of occuring. Example Generation of random numbers. It has three parameters: low: lower bound: default 0.0. high: upper bound: default 1.0. size: The shape of the array which is returned.
