@@ -1,0 +1,1 @@
+In this project, I will do matrix operations and linear algebra operations using numpy library. Various operations such as matrix addition, subtraction, multiplication, finding determinants, inverses, eigenvalues and solving systems of linear equations using NumPy are done in this project.
