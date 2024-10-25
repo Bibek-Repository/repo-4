@@ -21,3 +21,6 @@ Poisson Distribution is a Discrete Distribution. It estimates how many times an 
 
 Uniform Distribution
 It is used to describe probability where every event has equal chances of occuring. Example Generation of random numbers. It has three parameters: low: lower bound: default 0.0. high: upper bound: default 1.0. size: The shape of the array which is returned.
+
+Logistic Distribution
+It is used to describe growth. It is extensively used in machine learning such as logistic regression, neural networks etc. It has three parameters: loc: mean, where the peak is default = 0, scale: standard deviation, the flatness of distribution: default 1, size: the shape of the returned array. The difference between logistic and normal distribution is that logistic distribution has more area under the tails, meaning it represents more possibility of occurence of an event further away from mean. For higher value of standard deviation, the normal and logistic distributions are near identical apart from the peak
