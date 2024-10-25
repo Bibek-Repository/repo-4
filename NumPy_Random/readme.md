@@ -24,3 +24,10 @@ It is used to describe probability where every event has equal chances of occuri
 
 Logistic Distribution
 It is used to describe growth. It is extensively used in machine learning such as logistic regression, neural networks etc. It has three parameters: loc: mean, where the peak is default = 0, scale: standard deviation, the flatness of distribution: default 1, size: the shape of the returned array. The difference between logistic and normal distribution is that logistic distribution has more area under the tails, meaning it represents more possibility of occurence of an event further away from mean. For higher value of standard deviation, the normal and logistic distributions are near identical apart from the peak
+
+Multinomial distribution
+It is a generalization of binomial distribution. It describes outcomes of multi-nomial scenarios unlike binomial where scenarios must be only one of two. Example: Blood type of a population, dice roll outcome. It has three parameters:
+n: number of possible outcomes (example: 6 for dice roll)
+pvals: list of probabilities of outcomes(example: 1/6,1/6,1/6,1/6,1/6,1/6 for dice roll)
+size: the shape of the array it returns
+They will produce one value for each pval. As they are generalization of binomial distribution their visual representation and similarity of normal distribution is same as that of multiple binomial distributions.
