@@ -6,3 +6,7 @@ randint() : It takes two parameter one for the range and the other for the size
 choice() : It will generate random value from an array. It can also return an array, size parameter will determine the size of array it returns.
 
 Seaborn is a library that uses Matplotlib to plot graphs. It will be used to visualize random distributions. pip install seaborn is used to install the seaborn library. Distplot stands for distribution plot. It is depreciated in python 3. displot() method can be used instead. It takes an array as input and plots a curve corresponding to the distribution of points in the array. That means how to points in array are distributed is shown in the curve through the plot. hist=False will remove the histogram from the plot.
+
+Normal Distribution
+The Normal Distribution is also called the Gaussian Distribution. It fits the probability distribution of many events, eg. IQ Scores, Heartbeat etc. random.normal() method is used to get a Normal Data Distribution. It has three parameters: loc - mean where the peak of the bell exists. scale - Standard Deviation, how flat the graph distribution should be. size - The shape of the returned array. The curve of a Normal Distribution is also known as the Bell Curve because of the bell-shaped curve.
+

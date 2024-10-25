@@ -6,7 +6,7 @@ import seaborn as sns   # Here, seaborn is a library
 sns.displot([0,1,2,3,4,5])
 plt.show()
 
-sns.distplot([0,1,2,3,4,5])
+sns.distplot([0,1,2,3,4,5])  # distplot() is depreciated in this version of python.
 plt.show()
 
 # Plotting a Distplot without Histogram
