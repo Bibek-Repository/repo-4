@@ -17,3 +17,16 @@ Big data sets are stored as JSON. JSON is a plain text, but has the format of an
 
 Analyzing the DataFrames:
 head() method can be used to get a quick overview of the DataFrame. The head() method returns the headers and a specified number of rows, starting from the top. info() method will display all the information about the dataset. the info() method tells the non null values. based on this, we can know the null values. Null values can be bad when analyzing data. This is what is known as cleaning data.
+
+Data Cleaning:
+Data cleaning is the process of fixing bad data in our data set. Bad data can be:
+empty cells (Null datasets)
+data in wrong format
+wrong data
+duplicates
+
+Remove Rows:
+the rows containing empty cells can be removed using a function called dropna(). dropna() returns new dataframe and will not change the original. original dataframe can be changed by using inplace = True argument.
+
+Replacing Using Mean, Median, Mode
+To replace empty cels, mean mode or median value of the column can be used. Pandas uses mean(), median(), mode() methods to calculate the respective values for a specified column.
