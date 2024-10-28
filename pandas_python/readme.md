@@ -30,3 +30,12 @@ the rows containing empty cells can be removed using a function called dropna().
 
 Replacing Using Mean, Median, Mode
 To replace empty cels, mean mode or median value of the column can be used. Pandas uses mean(), median(), mode() methods to calculate the respective values for a specified column.
+
+Cleaning the Data of Wrong Format
+In the rawdata.csv file two datas in the Date column, should be of string type. But they are not. To fix it, either we can remove the row or we can convert all cells in the columns into the same format. to_datetime() will convert the data into date in string format.
+
+Removing Rows:
+NaT value can be fixed by deleting entire row. dropna() method will be used to do this as shown in code file.
+
+Wrong Data:
+It is difficult to identify wrong values. It can be replaced by using loc. for big data sets, we can set some boundaries and replace the values that are outside of the boundaries.

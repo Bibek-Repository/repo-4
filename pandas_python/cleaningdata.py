@@ -5,6 +5,7 @@ import pandas as pd
 # loading csv file into the DataForm
 df = pd.read_csv('rawdata.csv')
 print(df.to_string())
+df.columns = df.columns.str.strip()  # This will remove the whitespace
 
 # The data set contains wrong format("date") in row 26
 # The data set contains wrong data ("Duration in row 7")
@@ -43,4 +44,26 @@ df["Calories"].fillna(x, inplace = True) # median = the value in the middle, aft
 df = pd.read_csv('rawdata.csv')
 x = df["Calories"].mode()[0]
 df["Calories"].fillna(x, inplace = True)  # mode: the value that occurs most frequently
+
+# Converting all the cells in the column: date
+df = pd.read_csv('rawdata.csv')
+df['Date'] = pd.to_datetime(df['Date'])
+print(df.to_string())   # This will convert the cell having dates into string.
+
+# Converting the cells containing Not a Time value
+df.dropna(subset=['Date'], inplace = True)
+
+# Replacing a value in cell using loc
+df.loc[7, 'Duration'] = 45
+# for big data sets:
+for x in df.index:
+    if df.loc[x, "Duration"] > 120:
+        df.loc[x, "Duration"]=120
+print(df.to_string)
+
+# Removing Rows
+for x in df.index:
+    if df.loc[x, "Duration"] > 120:
+        df.drop(x, inplace = True)
+print(df.to_string)
 
