@@ -29,7 +29,8 @@ Trigonometric functions
 sin(), cos(), tan() can be used. They take value in radians and return the value in radians. hypot() is used for calculating hypotanuos and deg2rad() and rad2deg() method is used for radian to degree conversion and vice versa. sin() and arcsin() method is for finding the sine and angles correspondingly. Similar is for cosine and tangent. Similaryly, sinh() cosh() and tanh() are used for the hyperbolic functions. the angles can be found by using arcsinh(), arcosh() and arctanh().
 
 Set in numpy
-unique() method is used to find unique elements from an array. Set arrays are 1-D arrays.union() is used for one array union. Union between two arrays can be achieved by using union1d() function. intersect1d() for finding the intersection. the assume_unique parameter will speed up computation if set to True. setdiff1d() method is used for finding the difference of two array.
+unique() method is used to find unique elements from an array. Set arrays are 1-D arrays.union() is used for one array union. Union between two arrays can be achieved by using union1d() function. intersect1d() for finding the intersection. the assume_unique parameter will speed up computation if set to True. setdiff1d() method is used for finding the difference of two array which will return those values in first array which is not available in the second array. Finding the symmetric Difference where all the values that are not present in Both arrays are returned.
+setxorld() method is used for this operation.
 
 
 
