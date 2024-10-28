@@ -45,3 +45,83 @@ data = {
     }
 myvar = pd.DataFrame(data)
 print(myvar)
+
+# Creating Pandas dataframe:
+data = {
+    "country": ["Nepal", "USA", "Canada","India"],
+    "code":[977, 1, 2, 3]
+}
+
+# loading data into DataFrame object:
+df = pd.DataFrame(data)
+print(df)
+
+# Locating Row
+print(df.loc[0])  # This is return a pandas Series
+print(df.loc[1])
+
+# a list of Indexes:
+print(df.loc[[0,1]])
+
+# Named Indexes
+data = {
+    "college": ["ismt", "goldengate", "kathford"],
+    "date": [2023,2012,2014]
+}
+df = pd.DataFrame(data, index = ["study1", "study2", "study3"])
+print(df)
+
+# Locating Named Index
+print(df.loc["study1"])
+
+# To load files into a DataFrame
+df = pd.read_csv('data.csv')
+print(df)
+
+# loading CSV into a dataframe
+df = pd.read_csv("data.csv")
+print(df.to_string())  # It will print the entire DataFrame
+
+# To check the maximum rows using pandas
+print(pd.options.display.max_rows)   # It shows 60 which is the maximum number of rows
+
+# Setting maximum number of rows to display the Dataframe:
+pd.options.display.max_rows = 1000
+print(pd.options.display.max_rows)
+df = pd.read_csv('data.csv')
+print(df)
+
+# To load JSON file into a DataFrame:
+df = pd.read_json('sample3.json')  # sample3.json is a sample json file from the internet 
+print(df.to_string)
+
+# Dictionary as JSON
+dict = {
+    "Motorcycle":{
+        "0":"harley",
+        "1":"royal",
+        "2":"triumph"
+    },
+    "engine":{
+        "0":"l23",
+        "1":"m23",
+        "2":"a13"
+    }
+}
+df = pd.DataFrame(dict)
+print(df)
+
+# Analyzing DataFrames
+df = pd.read_json('sample3.json')
+print(df.head(10))   # We can do this in the csv file too
+
+# printing the first 5 rows
+print(df.head())
+
+# print the last rows
+print(df.tail(10))   # This will print the last 10 rows
+print(df.tail())     # This will print the last 5 rows by defaault
+
+# Info about the Data
+print(df.info())   # the information such as 35 entries, are given
+
