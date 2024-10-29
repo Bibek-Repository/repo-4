@@ -42,3 +42,6 @@ It is difficult to identify wrong values. It can be replaced by using loc. for b
 
 Duplicates:
 The duplicated() method returns a boolean value for each row. The duplicated() method will help to discover duplicates. To remove the duplicates, the drop_duplicates() method is used. inplace = true parameter will make sure that method does NOT return a new DataFrame, but it will remove all duplicates from the original DataFrame.
+
+Data Correlations:
+corr() method calculates the relationship between each column in data set. correlations ranges from -1 to 1. -1 and 1 are good correlation while if it is close to 0 it means that it has bad correlation. -1 correlation means that the increment in one will give decrement in other while 1 correlation means that the increment in one will give increment in other too.
