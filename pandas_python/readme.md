@@ -45,3 +45,12 @@ The duplicated() method returns a boolean value for each row. The duplicated() m
 
 Data Correlations:
 corr() method calculates the relationship between each column in data set. correlations ranges from -1 to 1. -1 and 1 are good correlation while if it is close to 0 it means that it has bad correlation. -1 correlation means that the increment in one will give decrement in other while 1 correlation means that the increment in one will give increment in other too.
+
+Pandas-Plotting
+plot() method is used to create diagrams. pyplot submodule of the matplotlib library can be used to visualize the diagramm on the screen.
+
+Scatter Plot
+kind argument is used to make a scatter plot. kind = 'scatter'. A scatter plot needs and x-axis and y-axis.
+
+Histogram:
+We use kind argument to specify a histogram. A histogram needs only one column. A histograms shows the frequency of each interval, eg. how may workouts lasted between 50 and 60 minutes.
