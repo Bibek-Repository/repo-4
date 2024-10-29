@@ -27,13 +27,13 @@ df.fillna(130, inplace = True)
 
 # Replacing only for specified columns
 df = pd.read_csv('rawdata.csv')
-df["Calories"].fillna(130,inplace = True)
+df['Calories'].fillna(130,inplace = True)
 
 # Replacing using Mean, Median or Mode
 
 df = pd.read_csv('rawdata.csv')
 x = df['Calories'].mean()
-df["Calories"].fillna(x, inplace = True)  # sum of all values divided by number of values
+df['Calories'].fillna(x, inplace = True)  # sum of all values divided by number of values
 
 # Replacing using Median
 df = pd.read_csv('rawdata.csv')
@@ -42,8 +42,8 @@ df["Calories"].fillna(x, inplace = True) # median = the value in the middle, aft
 
 # Replacing using mode
 df = pd.read_csv('rawdata.csv')
-x = df["Calories"].mode()[0]
-df["Calories"].fillna(x, inplace = True)  # mode: the value that occurs most frequently
+x = df['Calories'].mode()[0]
+df['Calories'].fillna(x, inplace = True)  # mode: the value that occurs most frequently
 
 # Converting all the cells in the column: date
 df = pd.read_csv('rawdata.csv')
@@ -66,4 +66,10 @@ for x in df.index:
     if df.loc[x, "Duration"] > 120:
         df.drop(x, inplace = True)
 print(df.to_string)
+
+# Removing Duplicates
+print(df.duplicated())
+
+# Removing all duplicates
+df.drop_duplicates(inplace= True)
 

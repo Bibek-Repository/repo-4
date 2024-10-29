@@ -39,3 +39,6 @@ NaT value can be fixed by deleting entire row. dropna() method will be used to d
 
 Wrong Data:
 It is difficult to identify wrong values. It can be replaced by using loc. for big data sets, we can set some boundaries and replace the values that are outside of the boundaries.
+
+Duplicates:
+The duplicated() method returns a boolean value for each row. The duplicated() method will help to discover duplicates. To remove the duplicates, the drop_duplicates() method is used. inplace = true parameter will make sure that method does NOT return a new DataFrame, but it will remove all duplicates from the original DataFrame.
