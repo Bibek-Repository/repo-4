@@ -54,3 +54,18 @@ kind argument is used to make a scatter plot. kind = 'scatter'. A scatter plot n
 
 Histogram:
 We use kind argument to specify a histogram. A histogram needs only one column. A histograms shows the frequency of each interval, eg. how may workouts lasted between 50 and 60 minutes.
+
+Spatial Data:
+spatial data refers to data that is represented in a geometric space. Example points on a coordinate system. We deal with spatial data problems on many tasks. Eg finding if a point is inside a boundary or not. Scipy provides us with the module scipy.spatial, which has functions for working with spatial data. 
+
+Triangulation:
+A triangulation of a polygon is to divide the polygon into multiple triangles with which we can compute an area of the polygon. A Triangulation with points means creating surface composed triangles in which all of the given points are on at least one vertex of any triangle in the surface. One method to generate these triangulations through points is the Delaunay() Triangulation.
+
+Convex hull:
+A convex hull is the smallest polygon that covers all the given points. convexhull() method is used to create a convex hull.
+
+KDTrees
+KDTrees are a datastructure optimized for nearest neighbor queries. Example, in a set of points using KDTrees we can efficiently ask which points are nearest to a certain given point. The KDTree() method returns a KDTree object. The query() method returns the distance to the nearest neighbor and the location of the neighbors.
+
+Distance Matrix
+There are many Distance Metrics used to find various types of distances between two points in data science, Euclidean distance, cosine distance etc. The distance between two vectors may not only be the length of straight line between them, it can also be the angle between them from origin, or number of unit steps required. machine learning algorithm like K Nearest Neighbors or K means etc depend on the Distance Matrix. Cityblock Distance (Manhattan Distance) is the distance computed using 4 degrees of movement. We can move up, down, right, left not diagonally. Cosine Distance is the cosine angle between the two points.
