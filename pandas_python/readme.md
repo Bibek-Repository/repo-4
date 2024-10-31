@@ -69,3 +69,15 @@ KDTrees are a datastructure optimized for nearest neighbor queries. Example, in 
 
 Distance Matrix
 There are many Distance Metrics used to find various types of distances between two points in data science, Euclidean distance, cosine distance etc. The distance between two vectors may not only be the length of straight line between them, it can also be the angle between them from origin, or number of unit steps required. machine learning algorithm like K Nearest Neighbors or K means etc depend on the Distance Matrix. Cityblock Distance (Manhattan Distance) is the distance computed using 4 degrees of movement. We can move up, down, right, left not diagonally. Cosine Distance is the cosine angle between the two points.
+
+SciPy Matlab Arrays
+scipy provides us with interoperability with Matlab as well. module: scipy.io helps us work with matlab arrays. savemat() function allows us to export data in Matlab format. This method takes the following parameters:
+filename: the file name for saving data
+mdict: a dictionary containing the data
+do_compression: a boolean value that specifies whether to compress the result or not. Defalut False. To import the data from matlab format we use loadmat() function which allows us to import data from a matlab file. The function takes one required parameter:
+filename: the file name of the saved data.
+It will return a structured array whose keys are the variable names, and the corresponding values are the variables values.
+
+
+
+
