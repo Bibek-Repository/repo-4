@@ -43,7 +43,7 @@ hull_points = hull.simplices  # it is a pair of indices that defines one of the 
 plt.scatter(points[:,0], points[:,1]) # plots all the points
 for simplex in hull_points:  # plots the convex hull's edges
     plt.plot(points[simplex, 0], points[simplex, 1], 'k-')
-
+plt.legend()
 plt.show()
 
 # KDTree

@@ -78,6 +78,15 @@ do_compression: a boolean value that specifies whether to compress the result or
 filename: the file name of the saved data.
 It will return a structured array whose keys are the variable names, and the corresponding values are the variables values.
 
+Interpolation
+Interpolation is a method for generating points between given points. Interpolation is used to deal with missing data in a dataset, interpolation is often used to substitute those values. This method of filling values is called imputation. Apart from imputation, interpolation is often used where we need to smooth the discrete points in a dataset. Scipy provides us with a module called scipy.interpolate which has many functions to deal with interpolation:
+1D interpolation:
+The function interp1d() is used to interpolate a distribution with 1 variable. It takes x and y points and returns a callable function that can be called with new x and returns corresponding y.
 
+1D Interpolation
+The function interp1d() is used to interpolate a distribution with 1 variable. It takes x and y points and returns a callable function that can be called with new x and returns corresponding y.
+
+Spline Interpolation
+In 1 D interpolation the points are fitted for a single curve whereas in Spline Interpolation the points are fitted against a piecewise function defined with polynoials called splines.
 
 
