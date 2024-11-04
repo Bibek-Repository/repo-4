@@ -87,6 +87,64 @@ The function interp1d() is used to interpolate a distribution with 1 variable. I
 The function interp1d() is used to interpolate a distribution with 1 variable. It takes x and y points and returns a callable function that can be called with new x and returns corresponding y.
 
 Spline Interpolation
-In 1 D interpolation the points are fitted for a single curve whereas in Spline Interpolation the points are fitted against a piecewise function defined with polynoials called splines.
+In 1 D interpolation the points are fitted for a single curve whereas in Spline Interpolation the points are fitted against a piecewise function defined with polynoials called splines. The UnivariateSpline() function takes xs and ys and produce a callable function that can be called with new xs. Piecewise function has different definition for different ranges.
+
+Interpolation with Radial Basis Function
+Radial basis function is a function that is defined corresponding to a fixed reference point. The Rbf() function also takes xs and ys as arguments and produces a callable function that can be called with new xs.
+
+Statistical Significance Tests
+In statistics, statistical significance means that the result that was produced has a reason behind it, it was not produced randomly, or by chance. SciPy provides us with a module called scipy.stats, which has functions for performing statistical significance tests. Hypthesis is an assumption about a parameter in population.
+Null Hypothesis assumes that the observation is not statistically significant. 
+
+Alternate Hypothesis assumes that the observations are due to some reason. It's alternate to Null Hypothesis.
+
+Example:
+For an assessment of a student we would take:
+"student is worse than average" - as a null hypthesis, and:
+"student is better than average" - as an alternate hypothesis.
+
+One tailed test
+When our hypothesis is testing for one side of the value only, it is called "one tailed test".
+
+For the null hypothesis:
+"the mean is equal to k", we can have alternate hypothesis:
+" the mean is less than k", or:
+"the mean is greater than k"
+
+Two tailed test
+When our hypothesis is testing for both side of the values.
+Example:
+For the ull hypthesis:
+"the mean is equal to k", we can have alternate hypothesis:
+"the mean is not equal to k"
+In this case the mean is less than, or greater than k, and both sides are to be checked.
+
+Alpha value
+Alpha value is the level of significance.
+Example: How close to extremas the data must be for null hypothesis to be rejected. It is usually taken as 0.01, 0.05, or 0.1.
+
+P value
+P value tells how close to extreme the data actually is. P value and alpha values are compared to establish the statistical significance. If p value <= alpha we reject the null hypothesis and say that the data is statistically significant. otherwise we accept the null hypothesis.
+
+T-Test
+T-tests are used to determine if there is significant deference between means of two variables and lets us know if they belong to the same distribution. It is a two tailed test. The function ttest_ind() takes two samples of same size and produces a tuple of t-statistic and p-value.
+
+KS-Test
+KS test is  used to check if the given values follow a distribution. there are two parameters: one is the value to be tested and the other one is the CDF as two parameters. A CDF can be either a string or a callable function that returns the probability.
+It can be used as a one tailed or two tailed test. By default it is a two tailed. We can pass parameter alternative as a string of one of two-sided, less, or greater.
+
+Statistical Descriptionn of Data
+In order to see a summary of values in an array, we can use the describe() function.
+It returns the following description:
+1. number of observations(nobs)
+2. minimum and maximum values = minmax
+3. mean
+4. variance
+5. skewness
+6. kurtosis
+
+Normality Tests (Skewness and Kurtosis)
+Normality tests are based on the skewness and kurtosis. The normaltest() function returns p value for the null hypothesis. "x comes from a normal distribution". Skewness is a measure of symmetry in data. For normal distributions it is 0. If it is negative, it means the data is skewed left and if positive, data is skewed right. Kurtosis is the measure of whether the data is heavy or lightly tailed to a normal distribution. Positive means heavy tailed, and Negative means light tailed.
+
 
 
