@@ -68,4 +68,8 @@ the adjency matrix would be:
  the starting element to traverse graph from
 
  Breadth First Order
- breadth_first_order() method returns a breadth first traversal from a node
+ breadth_first_order() method returns a breadth first traversal from a node. It takes the following arguments:
+ the graph
+ the starting elemenet to traverse graph from
+
+ 

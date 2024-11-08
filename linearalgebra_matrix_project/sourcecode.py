@@ -65,6 +65,9 @@ print("Eigenvectors of B:\n", eigenvectorsB)
 coefficients = np.array([[3, 2], [1, 4]])
 constants = np.array([8, 7])
 
+print(type(coefficients))
+print(type(constants))
+
 solution = np.linalg.solve(coefficients, constants)
 print("solution of the system of equations:", solution)
 
